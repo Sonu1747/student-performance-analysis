@@ -1,0 +1,182 @@
+# Student Performance Monitoring Configuration
+# This file contains all configuration settings for the project
+
+# Database Configuration
+database:
+  type: "sqlite"  # Options: sqlite, mysql
+  host: "localhost"
+  database: "student_performance.db"
+  user: "admin"
+  password: "password"
+  port: 3306
+  
+# Data Processing Configuration
+data_processing:
+  min_attendance_rate: 0.7
+  min_engagement_sessions: 5
+  grade_threshold: 60.0
+  risk_threshold: 0.6
+  
+# Email Configuration for Alerts
+email:
+  smtp_server: "smtp.gmail.com"
+  smtp_port: 587
+  username: "your_email@gmail.com"
+  password: "your_app_password"  # Use app-specific password for Gmail
+  from_email: "your_email@gmail.com"
+  to_emails:
+    - "admin@school.edu"
+    - "counselor@school.edu"
+    - "principal@school.edu"
+  
+# Automation Settings
+automation:
+  data_pull_frequency: "daily"
+  model_update_frequency: "weekly"
+  alert_frequency: "daily"
+  high_risk_threshold: 0.6
+  enable_email_alerts: true
+  enable_powerbi_refresh: true
+  
+# Power BI Configuration
+powerbi:
+  gateway_url: "https://your-gateway-url.com"
+  dataset_id: "your-dataset-id"
+  refresh_key: "your-refresh-key"
+  workspace_id: "your-workspace-id"
+  
+# Model Configuration
+model:
+  type: "random_forest"  # Options: random_forest, gradient_boosting
+  test_size: 0.2
+  random_state: 42
+  cv_folds: 5
+  
+# Feature Engineering Configuration
+features:
+  numerical_features:
+    - "age"
+    - "avg_score"
+    - "min_score"
+    - "max_score"
+    - "total_exams"
+    - "subjects_count"
+    - "attendance_rate"
+    - "total_days"
+    - "total_activities"
+    - "total_duration"
+    - "login_sessions"
+    - "grade_consistency"
+    - "grade_volatility"
+    - "attendance_score"
+    - "avg_session_duration"
+    - "engagement_intensity"
+    - "combined_risk_score"
+    - "subject_diversity"
+    - "academic_engagement_score"
+    - "performance_consistency"
+    - "attendance_engagement"
+  
+  categorical_features:
+    - "gender"
+    - "class"
+    - "age_group"
+    - "performance_category"
+    - "attendance_category"
+    - "engagement_category"
+  
+# Risk Assessment Configuration
+risk_assessment:
+  low_risk_threshold: 0.2
+  medium_risk_threshold: 0.4
+  high_risk_threshold: 0.6
+  critical_risk_threshold: 0.8
+  
+  risk_factors:
+    academic_weight: 0.4
+    attendance_weight: 0.3
+    engagement_weight: 0.3
+  
+# File Paths Configuration
+paths:
+  data_raw: "data/raw"
+  data_processed: "data/processed"
+  models: "models"
+  logs: "logs"
+  reports: "reports"
+  
+# Logging Configuration
+logging:
+  level: "INFO"  # Options: DEBUG, INFO, WARNING, ERROR
+  format: "%(asctime)s - %(levelname)s - %(message)s"
+  file: "logs/student_performance.log"
+  max_size: "10MB"
+  backup_count: 5
+  
+# Alert Configuration
+alerts:
+  enable_email: true
+  enable_sms: false  # Future feature
+  enable_dashboard: true
+  
+  email_templates:
+    high_risk_subject: "URGENT: High-Risk Student Alert"
+    model_update_subject: "Model Update Completed"
+    error_subject: "System Error Alert"
+  
+# Dashboard Configuration
+dashboard:
+  refresh_interval: 3600  # seconds
+  max_students_display: 1000
+  default_risk_threshold: 0.6
+  
+# Performance Configuration
+performance:
+  max_memory_usage: "2GB"
+  parallel_processing: true
+  num_workers: 4
+  
+# Security Configuration
+security:
+  encrypt_sensitive_data: true
+  data_retention_days: 365
+  audit_logging: true
+  
+# Backup Configuration
+backup:
+  enable_auto_backup: true
+  backup_frequency: "daily"
+  backup_retention_days: 30
+  backup_location: "backups"
+  
+# Monitoring Configuration
+monitoring:
+  enable_health_checks: true
+  health_check_interval: 300  # seconds
+  alert_on_failure: true
+  
+# API Configuration (Future feature)
+api:
+  enable_rest_api: false
+  api_port: 8000
+  api_host: "localhost"
+  api_key_required: true
+  
+# Integration Configuration
+integrations:
+  lms_integration: false  # Learning Management System
+  sis_integration: false  # Student Information System
+  crm_integration: false   # Customer Relationship Management
+  
+# Advanced Configuration
+advanced:
+  feature_selection: true
+  hyperparameter_tuning: true
+  cross_validation: true
+  model_ensemble: false  # Future feature
+  
+# Environment Configuration
+environment:
+  debug_mode: false
+  production_mode: true
+  test_mode: false

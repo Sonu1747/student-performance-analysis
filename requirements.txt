@@ -1,0 +1,123 @@
+# Student Performance Monitoring & Dropout Prediction
+# Requirements file for Python dependencies
+
+# Core Data Science Libraries
+pandas>=1.5.0
+numpy>=1.21.0
+scikit-learn>=1.1.0
+scipy>=1.9.0
+
+# Machine Learning
+joblib>=1.2.0
+xgboost>=1.6.0
+lightgbm>=3.3.0
+
+# Data Visualization
+matplotlib>=3.5.0
+seaborn>=0.11.0
+plotly>=5.10.0
+
+# Database Connectivity
+sqlite3  # Built-in with Python
+mysql-connector-python>=8.0.0
+pymysql>=1.0.0
+sqlalchemy>=1.4.0
+
+# Configuration and Utilities
+pyyaml>=6.0
+python-dotenv>=0.19.0
+schedule>=1.2.0
+
+# Email and Notifications
+smtplib  # Built-in with Python
+email  # Built-in with Python
+requests>=2.28.0
+
+# Data Processing
+openpyxl>=3.0.0
+xlrd>=2.0.0
+xlsxwriter>=3.0.0
+
+# Statistical Analysis
+statsmodels>=0.13.0
+
+# Feature Engineering
+feature-engine>=1.5.0
+
+# Model Evaluation
+imbalanced-learn>=0.9.0
+
+# Logging and Monitoring
+loguru>=0.6.0
+
+# File Handling
+pathlib  # Built-in with Python
+glob  # Built-in with Python
+
+# Date and Time
+datetime  # Built-in with Python
+pytz>=2022.1
+
+# JSON Handling
+json  # Built-in with Python
+
+# System and OS
+os  # Built-in with Python
+sys  # Built-in with Python
+subprocess  # Built-in with Python
+
+# Type Hints
+typing  # Built-in with Python
+
+# Testing (Optional)
+pytest>=7.0.0
+pytest-cov>=3.0.0
+
+# Jupyter Notebook (Optional)
+jupyter>=1.0.0
+ipykernel>=6.0.0
+
+# Power BI Integration (Optional)
+powerbi-client>=1.0.0
+
+# Web Framework (Optional - for API)
+fastapi>=0.85.0
+uvicorn>=0.18.0
+
+# Additional Utilities
+tqdm>=4.64.0
+colorama>=0.4.0
+click>=8.0.0
+
+# Data Validation
+pydantic>=1.9.0
+
+# Async Support (Optional)
+asyncio  # Built-in with Python
+aiofiles>=22.0.0
+
+# Memory Optimization
+psutil>=5.9.0
+
+# Security
+cryptography>=38.0.0
+
+# API Integration
+httpx>=0.23.0
+
+# Configuration Management
+configparser  # Built-in with Python
+argparse  # Built-in with Python
+
+# Development Tools (Optional)
+black>=22.0.0
+flake8>=5.0.0
+mypy>=0.971
+
+# Documentation (Optional)
+sphinx>=5.0.0
+sphinx-rtd-theme>=1.0.0
+
+# Version Information
+# Python >= 3.8
+# Tested with Python 3.9, 3.10, 3.11
